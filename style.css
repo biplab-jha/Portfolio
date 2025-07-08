@@ -926,7 +926,7 @@ circle.progress {
 
     .text-animation span{
     position: relative;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     }
 
     .text-animation span::before{
@@ -940,7 +940,7 @@ circle.progress {
     background-color: var(--bg-color);
     position: absolute;
     width: calc(100% + 8px);
-    height: 135%;
+    height: 7rem;
     border-left: 3px solid var(--bg-color);
     right: -8px;
     animation: cursor 3s infinite, typing 20s steps(14) infinite;
