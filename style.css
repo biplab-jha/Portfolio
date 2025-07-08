@@ -924,6 +924,81 @@ circle.progress {
         display: block;
     }
 
+    .text-animation span{
+    position: relative;
+    font-size: 3.5rem;
+    }
+
+    .text-animation span::before{
+    content: 'Developer';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+    .text-animation span::after{
+    content: '';
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 135%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 3s infinite, typing 20s steps(14) infinite;
+   }
+
+    @keyframes words{
+    0%,
+    20%{
+        content: 'Web Developer';
+    }
+
+    21%,
+    40%{
+        content: 'Web Designer';
+    }
+    41%,
+    60%{
+        content: 'AI Developer';
+    }
+
+    61%,
+    80%{
+        content: 'Content Manager'
+    }
+
+    81%,
+    100%{
+        content: 'Blogger';
+    }
+}
+
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+
     .navbar a{
         display: block;
         font-size: 2rem;
